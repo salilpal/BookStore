@@ -8,7 +8,7 @@ import cors from "cors";
 const app = express();
 
 const mongoDBURL = process.env.mongoDBURL;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5555;
 
 // Middleware for parsing request body
 app.use(express.json());
